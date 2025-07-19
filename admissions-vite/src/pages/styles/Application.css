@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; /* ✅ center horizontally */
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+  .container  h2 {
+      background-color:#1b5d2b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin: -30px -30px 20px -30px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field.full {
+      width: 100%;
+      font-weight: bold;
+      color: black;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #eef3fc;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 60px;
+    }
+
+    .gender {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: #1b5d2b;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background-color:lightgreen;
+      color: black;
+      transition: background 0.3s ease;
+    }

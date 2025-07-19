@@ -1,0 +1,9 @@
+# Ignore environment config
+.env
+db.php
+
+# Ignore uploaded files
+uploads/
+
+# Ignore Composer dependencies
+/vendor/

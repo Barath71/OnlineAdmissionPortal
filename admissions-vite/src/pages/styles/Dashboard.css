@@ -1,0 +1,189 @@
+
+.navbar {
+  height: 60px;
+  background-color: #1b5d2b ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(24, 10, 10, 0.2);
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-dropdown {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.profile-dropdown span {
+  color: white;
+  padding: 8px 12px;
+  border-radius: px;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.dropdown-menu button {
+  color: white;
+  background: #1b5d2b;
+  border: none;
+  padding: 8px 12px;
+  padding-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background: lightgreen;
+  color: black;
+}
+
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: #1b5d2b;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  z-index: 5;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Sidebar links */
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+.main {
+  margin-top: 60px;
+  margin-left: 240px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.main.full {
+  margin-left: 0;
+}
+
+.header h1{
+    color:gray;
+}
+
+    .status-cards {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      flex: 1;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0;
+      color: #555;
+    }
+    .card .count {
+      font-size: 30px;
+      color: #333;
+    }
+    .table-container {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+   .status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.status-badge.pending { background-color: #ffc107; }   /* Yellow */
+.status-badge.accepted { background-color: #28a745; }  /* Green */
+.status-badge.rejected { background-color: #dc3545; }  /* Red */
+
+    .action-btn {
+      background: #4f79ff;
+      color: white;
+      padding: 5px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+ .filters button {
+  border: none;
+  background-color: #f0f0f0;
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #1b5d2b;
+  transform: scale(1.1); 
+  color: white;
+}

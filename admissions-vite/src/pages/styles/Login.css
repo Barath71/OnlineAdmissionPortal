@@ -1,0 +1,104 @@
+.login-page {
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-page * {
+  box-sizing: border-box;
+}
+
+.login-page .login_container {
+  max-width: 350px;
+  background-color: #fff;
+  margin: 100px auto;
+  padding: 40px 30px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login-page h2 {
+  background-color: #1b5d2b;
+  text-align: center;
+  color: white;
+  padding: 12px 0;
+  margin: -40px -30px 30px -30px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 20px;
+}
+
+.login-page .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.login-page .field label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-page .field input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.login-page .field input:focus {
+  border-color: lightgreen;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.login-page .forgot-password {
+  text-align: left;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+.login-page .forgot-password a {
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-page .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-page .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-page .buttons button {
+  background-color:#1b5d2b ;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.login-page .buttons button:hover {
+  background-color: lightgreen;
+  color: black;
+  transform: scale(1.05);
+}
